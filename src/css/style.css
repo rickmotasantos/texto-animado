@@ -1,0 +1,46 @@
+html {
+    font-family: 'Special Elite', cursive ;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background-color: rgba(25, 25, 25);
+}
+
+body .line {
+    color: rgba(255, 255, 255, .75);
+    font-size: 4em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+body .line span {
+    color: blue;
+    font-weight: 500;
+}
+.typing-amimation {
+    animation: linkcursor 600ms steps(40) infinite normal, typing 5s steps(40) 4s normal infinite both;
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+    to {
+        width: 15em;
+    }
+}
+@keyframes linkcursor{
+    from{
+        border-right-color: rgba(255, 255, 255, .75)
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
